@@ -23,7 +23,7 @@ public class ArrayWithRandomNum {
             //Generating random numbers
             //(int) converts double to int
             //Math.floor(Math.random()*(max-min+1)+min)
-            randIntArr[i]=(int) Math.floor(Math.random()*11)+10;
+            randIntArr[i]=(int) Math.floor(Math.random()*51)+50;
         }
 
         //print array using
@@ -67,8 +67,25 @@ public class ArrayWithRandomNum {
         }
         System.out.println("\n the largest element in the array is: "+max+" and the index of max is: "+indexOfMax);
 
+     //Find the two smallest element in the Array
+
+        int smallest = randIntArr[0];
+        int secondSmallest= randIntArr[1];
+        for (int i = 0; i < randIntArr.length; i++) {
+            if(randIntArr[i]<smallest) {
+                secondSmallest = smallest;
+                smallest=randIntArr[i];
+
+            } else if (randIntArr[i]<secondSmallest){
+                secondSmallest=randIntArr[i];
+            }
+        }
+        System.out.println("The 1st smallest number is : "+smallest +" and 2nd smallest element is: "+ secondSmallest);
+
 
     }
+
+
 
 
 
