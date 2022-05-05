@@ -82,6 +82,34 @@ public class ArrayWithRandomNum {
         }
         System.out.println("The 1st smallest number is : "+smallest +" and 2nd smallest element is: "+ secondSmallest);
 
+        //Copying array
+        //1- using for loop
+
+         int[] sourceArr ={1,2,3,4,5,6,7,8,9,10};
+         int[] targetArr =new int[sourceArr.length];
+
+        for (int i = 0; i < sourceArr.length; i++) {
+            targetArr[i]=sourceArr[i];
+        }
+
+        for (int ele : targetArr) {
+            System.out.println(ele);
+        }
+        //2- using for arraycopy method
+
+        int[] targetArrayCopy = new int[sourceArr.length];
+
+        System.arraycopy(sourceArr,0,targetArrayCopy,0,sourceArr.length);
+
+        for (int ele : targetArrayCopy) {
+            System.out.println(ele);
+        }
+
+        //Passing array to methods
+
+
+
+
 
     }
 
