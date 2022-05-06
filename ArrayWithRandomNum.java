@@ -106,12 +106,26 @@ public class ArrayWithRandomNum {
         }
 
         //Passing array to methods
+        System.out.println("passing array as argument method: ");
+        printArray(sourceArr);
+
+        //return an array in a method
 
 
 
 
 
     }
+    public static void printArray(int[] array) {
+        for (int ele : array) {
+            System.out.println(ele);
+        }
+    }
+
+
+
+
+
 
 
 
